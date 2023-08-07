@@ -1,15 +1,13 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper";
-// import "swiper/css";
-// import "swiper/css/navigation";
+import { Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "../styles.css";
-import { Navigation } from "swiper";
-import { Pagination } from "swiper";
+
 import img from "../assets/meter1.svg";
 import bg from "../assets/banner-bg-7d41ca4d.png"
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 
 function Skills() {
