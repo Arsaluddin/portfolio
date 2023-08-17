@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faTwitter} from "@fortawesome/free-solid-svg-icons";
 import "../styles.css";
 
 function Navbar() {
   const [durum, setDurum] = useState(true);
-  console.log(durum);
+  // console.log(durum);
 
   window.onscroll = function () {
     scrollFunction();
@@ -26,7 +28,7 @@ function Navbar() {
   return (
     <>
       <div className="navbarcon flex justify-between items-center px-20 py-6 bg-transparent z-40 text-white lg:px-6 fixed w-full">
-        <h1 className="text-4xl  font-bold ">Reayhs</h1>
+        <h1 className="text-4xl  font-bold ">Portfolio</h1>
 
         <nav
           className={` flex justify-center items-center gap-x-10 ${
@@ -46,12 +48,17 @@ function Navbar() {
           </ul>
 
           <div className="icon text-lg flex gap-4  lg:gap-8 lg:my-10">
-            <a href="https://twitter.com/reayhs" target="_blank">
-              <i className="fa-brands fa-twitter border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
+            <a href="https://twitter.com/arsaluddin8" target="_blank">
+              {/* <i className="fa-brands fa-twitter"></i> */}
+              <FontAwesomeIcon icon={faTwitter} />
+              
             </a>
 
+      
+
             <a href="https://www.instagram.com/iburakz/" target="_blank">
-              <i className="fa-brands fa-instagram border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
+              {/* <i className="fa-brands fa-instagram border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i> */}
+              {/* <i class="fa fa-instagram" aria-hidden="true"></i> */}
             </a>
             <a
               href="https://github.com/Reayhs/react-tailwind-portfolio"
@@ -76,3 +83,4 @@ function Navbar() {
 }
 
 export default Navbar;
+ 
