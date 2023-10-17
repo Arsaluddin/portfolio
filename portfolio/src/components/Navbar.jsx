@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faTwitter} from "@fortawesome/free-solid-svg-icons";
+import {faInstagram} from "@fortawesome/free-brands-svg-icons";
+import {faTwitter} from "@fortawesome/free-brands-svg-icons";
+import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import "../styles.css";
 
 function Navbar() {
@@ -49,29 +52,32 @@ function Navbar() {
 
           <div className="icon text-lg flex gap-4  lg:gap-8 lg:my-10">
             <a href="https://twitter.com/arsaluddin8" target="_blank">
-              {/* <i className="fa-brands fa-twitter"></i> */}
-              <FontAwesomeIcon icon={faTwitter} />
+              
+              <FontAwesomeIcon icon={faTwitter} size="2x"/>
               
             </a>
 
-      
-
-            <a href="https://www.instagram.com/iburakz/" target="_blank">
-              {/* <i className="fa-brands fa-instagram border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i> */}
-              {/* <i class="fa fa-instagram" aria-hidden="true"></i> */}
+            <a href="https://www.instagram.com/arsal302" target="_blank">
+               <FontAwesomeIcon icon={faInstagram} size="2x"/>
             </a>
             <a
-              href="https://github.com/Reayhs/react-tailwind-portfolio"
+              href="https://www.linkedin.com/in/arsal-uddin-297134217/"
               target="_blank"
             >
-              <i className="fa-brands fa-github border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
+              <FontAwesomeIcon icon={faLinkedin} size="2x"/>
+            </a>
+            <a
+              href="https://github.com/Arsaluddin"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faGithub} size="2x"/>
             </a>
           </div>
-          <div className="btn">
+          {/* <div className="btn">
             <button className="border-[1px] border-white border-solid py-2 px-4 hover:bg-white hover:text-black font-bold">
               Let's Connect
             </button>
-          </div>
+          </div> */}
         </nav>
         <i
           onClick={(e) => setDurum(!durum)}
